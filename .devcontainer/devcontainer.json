@@ -4,9 +4,20 @@
   "customizations": {
     "vscode": {
       "settings": {
+        "chat.agent.enabled": false,
+        "chat.commandCenter.enabled": false,
+        "chat.detectParticipant.enabled": false,
+        "telemetry.feedback.enabled": false,
+        "telemetry.telemetryLevel": "off",
         "workbench.editorAssociations": {
           "*.md": "vscode.markdown.preview.editor"
         },
+        "workbench.settings.applyToAllProfiles": [
+          "chat.agent.enabled",
+          "chat.commandCenter.enabled",
+          "chat.detectParticipant.enabled",
+          "telemetry.feedback.enabled",
+        ],
         "files.exclude": {
           ".git/": true,
           ".gitignore": true,
