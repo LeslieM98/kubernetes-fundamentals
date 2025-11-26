@@ -6,7 +6,7 @@
       "settings": {
         "chat.agent.enabled": false,
         "chat.commandCenter.enabled": false,
-        "chat.detectParticipant.enabled": false,
+        "chat.disableAIFeatures": true,
         "telemetry.feedback.enabled": false,
         "telemetry.telemetryLevel": "off",
         "workbench.editorAssociations": {
@@ -15,8 +15,9 @@
         "workbench.settings.applyToAllProfiles": [
           "chat.agent.enabled",
           "chat.commandCenter.enabled",
-          "chat.detectParticipant.enabled",
+          "chat.disableAIFeatures",
           "telemetry.feedback.enabled",
+          "telemetry.telemetryLevel"
         ],
         "files.exclude": {
           ".git/": true,
