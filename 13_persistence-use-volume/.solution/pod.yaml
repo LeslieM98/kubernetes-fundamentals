@@ -10,7 +10,7 @@ spec:
         - "/bin/sh"
       args:
         - "-c"
-        - "while true; do echo $(date) >> /app/buffer; sleep 5; done;"
+        - "while true; do date >> /app/buffer; sleep 5; done;"
       volumeMounts:
         - name: my-volume
           mountPath: /app
