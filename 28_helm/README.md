@@ -149,8 +149,8 @@ cd /workspaces/kubernetes-fundamentals/28_helm
   ```yaml
   ---
   spec:
-  replicas: { { .Values.replicas } }
-  selector:
+    replicas: {{ .Values.replicas }}
+    selector:
   ```
 
 ## Customize your new release

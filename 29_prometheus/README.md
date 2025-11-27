@@ -49,6 +49,8 @@ kubectl create -f pod.yaml
   - predict memory usage in 24 hours based on the rate of the last 5 minutes: `predict_linear((container_memory_usage_bytes{pod="my-pod",container="nginx"}[5m]),24*3600)`
   - more examples: [https://prometheus.io/docs/prometheus/latest/querying/examples](https://prometheus.io/docs/prometheus/latest/querying/examples)
 
+- Stop port forwarding by `Crtl+C`
+
 ## Grafana
 
 - Install grafana
