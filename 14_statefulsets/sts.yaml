@@ -20,7 +20,7 @@ spec:
             - "/bin/sh"
           args:
             - "-c"
-            - "while true; do date pod $MY_POD_NAME - $MY_POD_IP >> /app/state; sleep 10; done;"
+            - "while true; do echo $(date) pod $MY_POD_NAME - $MY_POD_IP >> /app/state; sleep 10; done;"
           env:
             - name: MY_POD_IP
               valueFrom:
