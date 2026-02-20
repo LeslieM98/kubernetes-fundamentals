@@ -5,7 +5,7 @@ In this training course, we will show how the Kubernetes Scheduler tries to keep
 > Navigate to the lab folder:
 
 ```bash
-cd /workspaces/kubernetes-fundamentals/20_scheduling-affinity
+cd /workspaces/kubernetes-fundamentals/22_scheduling-affinity
 ```
 
 ## Inspect water-pod.yaml definition file and create the water-pod
@@ -24,7 +24,7 @@ kubectl create -f fire-deployment.yaml
 
 ## Verify that the pods location
 
-> Pods `fire` must not be on the same node as the pod `water`.
+> Pods `fire` are not allowed to run on the same node as the pod `water`.
 
 ```bash
 kubectl get pods -o=custom-columns='POD_NAME:metadata.name,NODE_NAME:spec.nodeName'

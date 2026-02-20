@@ -5,7 +5,7 @@ In this training, we will setup an Ingress and expose an app showing a blue scre
 > Navigate to the lab folder:
 
 ```bash
-cd /workspaces/kubernetes-fundamentals/22_ingress
+cd /workspaces/kubernetes-fundamentals/30_ingress
 ```
 
 ## Create the red application

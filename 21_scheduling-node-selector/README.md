@@ -5,7 +5,7 @@ In this training course, we will learn about Node Selector.
 > Navigate to the lab folder:
 
 ```bash
-cd /workspaces/kubernetes-fundamentals/19_scheduling-node-selector
+cd /workspaces/kubernetes-fundamentals/21_scheduling-node-selector
 ```
 
 ## Show all Nodes with its Labels

@@ -5,7 +5,7 @@ In this training, we will use Helm to create and customize an application.
 > Navigate to the lab folder:
 
 ```bash
-cd /workspaces/kubernetes-fundamentals/28_helm
+cd /workspaces/kubernetes-fundamentals/33_helm
 ```
 
 ## Do a release
