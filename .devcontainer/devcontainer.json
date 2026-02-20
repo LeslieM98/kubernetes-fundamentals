@@ -1,6 +1,6 @@
 {
   "name": "Kubernetes Fundamentals Training Labs",
-  "image": "quay.io/kubermatic-labs/training-ghcs-kubernetes-fundamentals-trainee-environment:1.0.6",
+  "image": "quay.io/kubermatic-labs/training-ghcs-kubernetes-fundamentals-trainee-environment:scheduling",
   "customizations": {
     "vscode": {
       "settings": {
