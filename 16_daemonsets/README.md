@@ -27,6 +27,9 @@ kubectl get po,no
 
 ```bash
 kubectl logs <POD-NAME>
+
+# verify distribution of pods across worker nodes
+kubectl get pods -o wide
 ```
 
 ## Clean up

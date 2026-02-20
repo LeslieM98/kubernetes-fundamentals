@@ -5,7 +5,7 @@ In this training course, we will firewall pod to pod Communication. Note that yo
 > Navigate to the lab folder:
 
 ```bash
-cd /workspaces/kubernetes-fundamentals/27_networkpolicies
+cd /workspaces/kubernetes-fundamentals/32_networkpolicies
 ```
 
 ## Create the resources for Bob and Susan
