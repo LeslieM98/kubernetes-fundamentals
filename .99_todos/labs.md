@@ -20,3 +20,20 @@
 
 port 80 is taken by codespaces itself
 do this on all trainings
+
+# Terminal linebreak issue
+
+hint in all trainings...
+> Note if the terminal is starting to behave strangely you can enter `reset`.
+
+# jobs, was wenn der job nicht terminiert
+
+maxexecutiontime -> activeDeadlineSeconds
+
+# affinities
+
+topologykey -> explain
+
+# another way of influencing scheduling
+
+check https://kubernetes.io/docs/concepts/scheduling-eviction/topology-spread-constraints/

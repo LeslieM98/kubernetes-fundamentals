@@ -34,29 +34,21 @@ cd /workspaces/kubernetes-fundamentals/33_helm
   kubectl get all
   ```
 
-- Port forward the service port 80 to the local port 8080
+- Access the application
 
   ```bash
+  # [TERMINAL-2] port forward the service port 80 to the local port 8080
   kubectl port-forward service/my-cyan-service 8080:80
-  ```
-
-- You can now access the service (in a seperate terminal)
-
-  ```bash
+  
+  # access the service
   curl http://127.0.0.1:8080
-  ```
 
-- You may also reach it via codespaces URL on your browser:
-
-  ```bash
+  # stop the port-forwarding process via `CTRL + C`
+  
+  # you may also reach it via codespaces URL on your browser:
   echo "https://${CODESPACE_NAME}-8080.app.github.dev/"
-  ```
 
-- You can stop the port-forwarding process via `CTRL + C`
-
-- Delete a release
-
-  ```bash
+  # delete a release
   helm delete my-release-defaults
   ```
 
@@ -80,25 +72,20 @@ cd /workspaces/kubernetes-fundamentals/33_helm
   kubectl get all
   ```
 
-- Port forward the service port 80 to the local port 8080
+- Access the application
 
   ```bash
-  kubectl port-forward service/my-magenta-service 8080:80
-  ```
-
-- You can now access the service (in a seperate terminal)
-
-  ```bash
+  # [TERMINAL-2] port forward the service port 80 to the local port 8080
+  kubectl port-forward service/my-cyan-service 8080:80
+  
+  # access the service
   curl http://127.0.0.1:8080
-  ```
 
-- You may also reach it via codespaces URL on your browser:
-
-  ```bash
+  # stop the port-forwarding process via `CTRL + C`
+  
+  # you may also reach it via codespaces URL on your browser:
   echo "https://${CODESPACE_NAME}-8080.app.github.dev/"
   ```
-
-- You can stop the port-forwarding process via `CTRL + C`
 
 ## Upgrade a release
 
@@ -120,27 +107,23 @@ cd /workspaces/kubernetes-fundamentals/33_helm
   kubectl get all
   ```
 
-- Port forward the service port 80 to the local port 8080
-
-  > You need to provide the updated color name on the command below:
+- Access the application
 
   ```bash
+  # [TERMINAL-2] port forward the service port 80 to the local port 8080
   kubectl port-forward service/my-<color>-service 8080:80
-  ```
-
-- You can now access the service (in a seperate terminal)
-
-  ```bash
+  
+  # access the service
   curl http://127.0.0.1:8080
-  ```
 
-- You may also reach it via codespaces URL on your browser:
-
-  ```bash
+  # stop the port-forwarding process via `CTRL + C`
+  
+  # you may also reach it via codespaces URL on your browser:
   echo "https://${CODESPACE_NAME}-8080.app.github.dev/"
-  ```
 
-- You can stop the port-forwarding process via `CTRL + C`
+  # delete a release
+  helm delete my-release-defaults
+  ```
 
 ## Templating
 

@@ -26,26 +26,24 @@ kubectl get pods
 ## Scale the number of replicas to 3
 
 ```bash
-kubectl scale replicaset my-replicaset --replicas 3
-```
-
-Open second terminal to watch the Pods
-
-```bash
+# [TERMINAL-2] open a second terminal to watch pods
 watch -n 1 kubectl get pods
+
+# scale the replicaset
+kubectl scale replicaset my-replicaset --replicas 3
 ```
 
 ## Delete one of the Pods
 
 ```bash
+# [TERMINAL-2] open a second terminal to watch pods
+watch -n 1 kubectl get pods
+
+# delete one pod
 kubectl delete pod <POD-NAME>
 ```
 
-Open second terminal to watch the Pods
-
-```bash
-watch -n 1 kubectl get pods
-```
+> Note that the pod gets recreated due to we claimed for 3 running pods in the replicaset.
 
 ## Cleanup
 

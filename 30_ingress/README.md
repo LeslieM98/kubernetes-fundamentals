@@ -51,27 +51,25 @@ kubectl create -f ingress.yaml
 kubectl describe ing my-ingress
 ```
 
-## Visit the applications "red" and "blue" in your browser via
+## Access the applications
 
 ```bash
+# get the ip address of the ingress-controller loadbalancer
 kubectl get svc ingress-nginx-controller -n ingress-nginx -o jsonpath='{.status.loadBalancer.ingress[].ip}'
-```
 
-Get the external IP of your LoadBalancer and vist via `curl`:
+# curl the red application
+curl http://<EXTERNAL-IP>/red
 
-- `curl http://<EXTERNAL-IP>/red`
-- `curl http://<EXTERNAL-IP>/blue`
+# curl the blue application
+curl http://<EXTERNAL-IP>/blue
 
-If you want to reach it via browser, you first need to port-forward ingress-nginx-controller service:
-
-```bash
+# [TERMINAL-2] port-forward the ingress-controller loadbalancer
 kubectl port-forward svc/ingress-nginx-controller -n ingress-nginx 80
-```
 
-Then, reach via below URLs:
-
-```bash
+# get the url of the application red
 echo "https://${CODESPACE_NAME}-80.app.github.dev/red"
+
+# get the url of the application blue
 echo "https://${CODESPACE_NAME}-80.app.github.dev/blue"
 ```
 

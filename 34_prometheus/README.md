@@ -30,15 +30,13 @@ kubectl create -f pod.yaml
   kubectl get all
   ```
 
-- Visit the prometheus UI in the browser by port-forwarding to reach the codespaces instance:
+- Visit the prometheus UI
 
   ```bash
+  [TERMINAL-2] port-forward the prometheus service
   kubectl port-forward svc/my-prometheus-server 80
-  ```
 
-- Reach via below URL:
-
-  ```bash
+  # get the url
   echo "https://${CODESPACE_NAME}-80.app.github.dev/"
   ```
 
@@ -61,15 +59,13 @@ kubectl create -f pod.yaml
     -f grafana-values.yaml
   ```
 
-- Visit the grafana UI in the browser by Port-forwarding to reach the codespaces instance:
+- Visit the grafana UI in the browser
 
   ```bash
+  [TERMINAL-2] port-forward the grafana service
   kubectl port-forward svc/my-grafana 80
-  ```
 
-- Reach via below URL:
-
-  ```bash
+  # get the url
   echo "https://${CODESPACE_NAME}-80.app.github.dev/"
   ```
 

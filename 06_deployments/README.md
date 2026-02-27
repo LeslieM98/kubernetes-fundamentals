@@ -15,23 +15,14 @@ cd /workspaces/kubernetes-fundamentals/06_deployments
   ```bash
   cat deployment-v1.yaml
   kubectl create -f deployment-v1.yaml
-  ```
 
-- Open second terminal to watch the Pods
-
-  ```bash
+  # [TERMINAL-2] open a second terminal to watch pods
   watch -n 1 kubectl get pods
-  ```
 
-- Scale the number of replicas to 3 and take a look at the second terminal
-
-  ```bash
+  # scale the number of replicas to 3 and take a look at the second terminal
   kubectl scale deployment my-deployment --replicas 3
-  ```
-
-- Change the image of the deployment and take a look at the second terminal
-
-  ```bash
+  
+  # change the image of the deployment and take a look at the second terminal
   kubectl set image deployment my-deployment nginx=nginx:1.19.3
   ```
 
@@ -43,11 +34,8 @@ cd /workspaces/kubernetes-fundamentals/06_deployments
 
   ```bash
   kubectl replace --force -f deployment-v2.yaml
-  ```
-
-- Change the image of the deployment and take a look at the second terminal
-
-  ```bash
+  
+  # change the image of the deployment and take a look at the second terminal
   kubectl set image deployment my-deployment nginx=nginx:1.19.3
   ```
 

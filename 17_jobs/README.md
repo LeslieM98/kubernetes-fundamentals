@@ -32,16 +32,12 @@ spec:
   template:
 ```
 
-Re-create the job.
-
 ```bash
-kubectl replace -f job.yaml  --force
-```
-
-## Watch the running jobs and the pods
-
-```bash
+# [TERMINAL-2] watch the running jobs and the pods
 watch -n 1 kubectl get pods,jobs
+
+# recreate the job
+kubectl replace -f job.yaml  --force
 ```
 
 ## Clean up

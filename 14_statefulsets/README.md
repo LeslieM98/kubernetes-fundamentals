@@ -22,16 +22,14 @@ cd /workspaces/kubernetes-fundamentals/14_statefulsets
 - Inspect and create the sts
 
   ```bash
+  # [TERMINAL-2] open a second terminal to watch pods
+  watch -n 1 kubectl get sts,pv,pvc,pods
+
+  # create the statefulset
   kubectl create -f sts.yaml
   ```
 
-- Watch the creation of the resources
-
   > Take note that the replicas are created one by one and not all at the same time.
-
-  ```bash
-  watch -n 1 kubectl get sts,pv,pvc,pods
-  ```
 
 - Print the content of the state file of the last built pod
 
@@ -41,19 +39,15 @@ cd /workspaces/kubernetes-fundamentals/14_statefulsets
 
 ### Scale down the statefulset
 
-- Scale down the statefulset
-
   ```bash
+  # [TERMINAL-2] open a second terminal to watch pods
+  watch -n 1 kubectl get sts,pv,pvc,pods
+
+  # trigger scaling down the statefulset
   kubectl scale sts my-sts --replicas 2
   ```
 
-- Watch the deletion of the resources
-
   > Note that the pv and the pvc will not get deleted.
-
-  ```bash
-  watch -n 1 kubectl get sts,pv,pvc,pods
-  ```
 
 ### Scale up the statefulset
 

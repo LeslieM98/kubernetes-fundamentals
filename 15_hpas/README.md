@@ -22,21 +22,16 @@ kubectl top nodes
 kubectl top pods
 ```
 
-## Inspect and create the hpa
+## Engage autoscaling
 
 ```bash
+# apply the hpa
 kubectl create -f hpa.yaml
-```
 
-## Open a new Cloud Shell and watch the pods resource usage
-
-```bash
+# [TERMINAL-2] monitor the resource usage of pods
 watch -n 1 kubectl top pods
-```
 
-## Inspect the load-deployment and create the deployment
-
-```bash
+# apply the load-deployment to bring the other deployment into resource pressure
 kubectl create -f load-deployment.yaml
 ```
 

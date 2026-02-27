@@ -49,18 +49,17 @@ cd /workspaces/kubernetes-fundamentals/08_services
 - Port forward the service port 80 to the local port 8080
 
   ```bash
+  # [TERMINAL-2] port forward the service port 80 to the local port 8080
   kubectl port-forward service/my-service 8080:80
-  ```
 
-- You can now access the service (in a seperate terminal)
-
-  ```bash
+  # access the service
   curl http://127.0.0.1:8080
   ```
 
 - You may also reach it via codespaces URL on your browser:
 
   ```bash
+  # get the url of the port-forwarded service
   echo "https://${CODESPACE_NAME}-8080.app.github.dev/"
   ```
 
