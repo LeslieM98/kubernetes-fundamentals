@@ -64,13 +64,13 @@ curl http://<EXTERNAL-IP>/red
 curl http://<EXTERNAL-IP>/blue
 
 # [TERMINAL-2] port-forward the ingress-controller loadbalancer
-kubectl port-forward svc/ingress-nginx-controller -n ingress-nginx 80
+kubectl port-forward svc/ingress-nginx-controller -n ingress-nginx 8080:80
 
 # get the url of the application red
-echo "https://${CODESPACE_NAME}-80.app.github.dev/red"
+echo "https://${CODESPACE_NAME}-8080.app.github.dev/red"
 
 # get the url of the application blue
-echo "https://${CODESPACE_NAME}-80.app.github.dev/blue"
+echo "https://${CODESPACE_NAME}-8080.app.github.dev/blue"
 ```
 
 ## Clean up

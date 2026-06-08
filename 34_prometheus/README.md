@@ -16,7 +16,7 @@ kubectl create -f pod.yaml
 
 ## Prometheus deployment
 
-- Install prometheus
+- Install Prometheus
 
   ```bash
   helm install my-prometheus prometheus \
@@ -30,14 +30,14 @@ kubectl create -f pod.yaml
   kubectl get all
   ```
 
-- Visit the prometheus UI
+- Visit the Prometheus UI
 
   ```bash
   [TERMINAL-2] port-forward the prometheus service
-  kubectl port-forward svc/my-prometheus-server 80
+  kubectl port-forward svc/my-prometheus-server 9090:80
 
   # get the url
-  echo "https://${CODESPACE_NAME}-80.app.github.dev/"
+  echo "https://${CODESPACE_NAME}-9090.app.github.dev/"
   ```
 
 - Execute some query over the "graph" page in your browser
@@ -51,7 +51,7 @@ kubectl create -f pod.yaml
 
 ## Grafana
 
-- Install grafana
+- Install Grafana
 
   ```bash
   helm install my-grafana grafana \
@@ -59,15 +59,17 @@ kubectl create -f pod.yaml
     -f grafana-values.yaml
   ```
 
-- Visit the grafana UI in the browser
+- Visit the Grafana UI in the browser
 
   ```bash
-  [TERMINAL-2] port-forward the grafana service
-  kubectl port-forward svc/my-grafana 80
+  # [TERMINAL-2] port-forward the grafana service
+  kubectl port-forward svc/my-grafana 8080:80
 
   # get the url
-  echo "https://${CODESPACE_NAME}-80.app.github.dev/"
+  echo "https://${CODESPACE_NAME}-8080.app.github.dev/"
   ```
+
+  > Note, the user is `admin` and you can find the password in the file named `/workspaces/kubernetes-fundamentals/34_prometheus/grafana-values.yaml`
 
 - Add Prometheus as data source to Grafana
   - Choose the Option `Connections`/`Data Sources`
