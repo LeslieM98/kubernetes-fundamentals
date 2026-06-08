@@ -33,7 +33,7 @@ kubectl create -f pod.yaml
 - Visit the Prometheus UI
 
   ```bash
-  [TERMINAL-2] port-forward the prometheus service
+  # [TERMINAL-2] port-forward the prometheus service
   kubectl port-forward svc/my-prometheus-server 9090:80
 
   # get the url

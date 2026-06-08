@@ -15,7 +15,7 @@ spec:
             backend:
               service:
                 name: red
-                port: 
+                port:
                   number: 80
           - path: /blue
             pathType: Exact
