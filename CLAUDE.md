@@ -10,11 +10,11 @@ A set of hands-on Kubernetes training labs delivered through GitHub Codespaces. 
 
 - Labs run inside the devcontainer image `quay.io/kubermatic-labs/training-ghcs-kubernetes-fundamentals-trainee-environment` (pinned in `.devcontainer/devcontainer.json`). The image's `postCreateCommand` runs `/setup_kind_cluster.sh` to provision a `my-cluster` kind cluster (1 control plane + 3 workers) plus `cloud-provider-kind` for `LoadBalancer` services.
 - All lab READMEs assume the Codespaces mount path: `cd /workspaces/kubernetes-fundamentals/<lab>`. Don't rewrite these to relative paths.
-- `make verify` runs `pre-checks.sh`, which checks the four expected docker containers are up and the cluster is reachable. Use this to confirm environment health before debugging a lab.
+- `make verify` runs `pre-checks.sh`, which checks the five expected docker containers are up and the cluster is reachable. Use this to confirm environment health before debugging a lab.
 
 ## Lab structure (important for any edit)
 
-Each top-level numbered directory is one lab. Numbering groups topics: `01–18` core concepts, `20–23` scheduling, `30–34` network/auth/observability.
+Each top-level numbered directory is one lab. Numbering groups topics: `01–18` core concepts, `20–23` scheduling, `30–34` networking, security, packaging, observability.
 
 A lab typically contains:
 - `README.md` — step-by-step student instructions (prose + bash code blocks).
