@@ -1,6 +1,6 @@
 # Ingress
 
-In this training, we will setup an Ingress and expose an app showing a blue screen and an app showing a red screen.
+In this training, we will set up an Ingress and expose an app showing a blue screen and an app showing a red screen.
 
 > Navigate to the lab folder:
 

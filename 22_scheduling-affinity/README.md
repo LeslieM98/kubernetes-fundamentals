@@ -22,7 +22,7 @@ cat fire-deployment.yaml
 kubectl create -f fire-deployment.yaml
 ```
 
-## Verify that the pods location
+## Verify the pods' location
 
 > Pods `fire` are not allowed to run on the same node as the pod `water`.
 

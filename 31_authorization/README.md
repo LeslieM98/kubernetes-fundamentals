@@ -1,6 +1,6 @@
 # Authorization
 
-In the training, we will learn about create role based access for a user to grant access on specific k8s cluster resources.
+In the training, we will learn how to create role-based access for a user to grant access on specific k8s cluster resources.
 
 > Navigate to the lab folder:
 
@@ -8,7 +8,7 @@ In the training, we will learn about create role based access for a user to gran
 cd /workspaces/kubernetes-fundamentals/31_authorization
 ```
 
-## Inspect definition files and create the servicaccount, clusterrole and clusterrolebinding
+## Inspect definition files and create the serviceaccount, clusterrole and clusterrolebinding
 
 ```bash
 cat serviceaccount.yaml

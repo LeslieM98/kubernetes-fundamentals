@@ -30,7 +30,7 @@ kubectl create -f persisting-deployment.yaml
 kubectl get pods -o wide
 ```
 
-> Note that the persisting pods got scheduled on one worker node due to they claim for a directory existing on one of the worker nodes.
+> Note that the persisting pods got scheduled on one worker node because they claim a directory existing on one of the worker nodes.
 
 > Note changing the accessmode to `ReadOnlyMany` in the PVC will also have no effect on the behaviour of the Scheduler. It is still storage provided by `localpath` and not via network attached storage.
 

@@ -22,7 +22,7 @@ cat pvc.yaml
 kubectl create -f pvc.yaml
 ```
 
-> There are some issues with this structure. Try to fix these erros and verify via `kubectl get pv,pvc`. You are finished when your pvc is in state `Bound`
+> There are some issues with this structure. Try to fix these errors and verify via `kubectl get pv,pvc`. You are finished when your pvc is in state `Bound`
 
 ```bash
 kubectl get pv,pvc

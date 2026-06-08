@@ -53,7 +53,7 @@ Delete the Deployment
 kubectl delete deployment my-deployment
 ```
 
-Verify if deployment is delete including all the associated pods and replicasets
+Verify the deployment is deleted including all the associated pods and replicasets
 
 ```bash
 kubectl get deploy,rs,po

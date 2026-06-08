@@ -1,6 +1,6 @@
 # Hello K8s
 
-In this course, we will create an application which will be reachable in the WWW.
+In this course, we will create an application which will be reachable on the Web.
 
 > Navigate to the lab folder:
 

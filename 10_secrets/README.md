@@ -8,7 +8,7 @@ In the training, we will learn about Secrets.
 cd /workspaces/kubernetes-fundamentals/10_secrets
 ```
 
-> Note that, there are errors in the yaml files. Try to fix them.
+> Note that there are errors in the yaml files. Try to fix them.
 
 ## Inspect secret.yaml definition file and create the secret
 

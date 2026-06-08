@@ -1,6 +1,6 @@
 # Network Policies
 
-In this training course, we will firewall pod to pod Communication. Note that your cluster has to support Network Policies.
+In this training course, we will firewall pod-to-pod communication. Note that your cluster has to support Network Policies.
 
 > Navigate to the lab folder:
 

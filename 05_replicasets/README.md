@@ -43,7 +43,7 @@ watch -n 1 kubectl get pods
 kubectl delete pod <POD-NAME>
 ```
 
-> Note that the pod gets recreated due to we claimed for 3 running pods in the replicaset.
+> Note that the pod gets recreated because we asked for 3 running pods in the replicaset.
 
 ## Cleanup
 
@@ -53,7 +53,7 @@ Delete the ReplicaSet
 kubectl delete replicaset my-replicaset
 ```
 
-Verify if replicaset is delete including all the associated pods
+Verify the replicaset is deleted including all the associated pods
 
 ```bash
 kubectl get rs,po
