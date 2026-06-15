@@ -11,4 +11,4 @@ spec:
       storage: 2Gi
   selector:
     matchLabels:
-      type: a-pv
+      type: my-pv

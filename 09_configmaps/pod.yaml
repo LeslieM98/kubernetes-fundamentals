@@ -14,5 +14,5 @@ spec:
         - name: MY_ENV_VAR
           valueFrom:
             configMapKeyRef:
-              key: a-key
-              name: a-configmap
+              key: foo
+              name: my-configmap

@@ -12,9 +12,9 @@ spec:
         - "-c"
         - "while true; do date >> /app/buffer; sleep 5; done;"
       volumeMounts:
-        - name: a-volume
+        - name: my-volume
           mountPath: /app
   volumes:
     - name: my-volume
       persistentVolumeClaim:
-        claimName: a-pvc
+        claimName: my-pvc
